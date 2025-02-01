@@ -7,6 +7,7 @@ A single Python script named queryScript.py that queries the  MyGene API and Ens
 Output:
 
 FASTA file containing red hair gene sequence, and the longest ORF amino acid sequence.
+
 TXT file containing species with homologous red hair genes.
 
 How to Run:
@@ -14,6 +15,9 @@ How to Run:
 To execute the script, navigate to the directory containing the script file (ensuring the above input files are in the same directory) and run:
 
 pip install biopython
+
 pip install requests
+
 chmod +X queryScript.py
+
 python3 queryScript.py
