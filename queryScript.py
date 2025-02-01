@@ -29,7 +29,7 @@ else:
 
 #Find longest ORF in geneSequence and convert into an amino acid sequence
 #Function taken from https://stackoverflow.com/questions/31757876/python-find-longest-orf-in-dna-sequence, based on https://pythonforbiologists.com/tutorial/regex.html
-longestOrf = max(re.findall(r'ATG(?:(?!TAA|TAG|TGA)...)*(?:TAA|TAG|TGA)',geneSequence), key = len)
+longestOrf = max(re.findall(r'(?=(ATG(?:(?!TAA|TAG|TGA)...)))*(?:TAA|TAG|TGA)',geneSequence), key = len)
 aminoSequence = Seq(longestOrf).translate()
 
 #Find homologies for the ensembl id, and make unique list of the species excluding homo_sapiens
