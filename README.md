@@ -1,12 +1,7 @@
-# Goal: Query RESTful APIs to uncover species with red hair. 
-# Author: Vivek Mathew
-# Email: vivekmathew@brandeis.edu
-# Date: 12/03/2024
-
-
-## Query Script ###
-
-### Description ###
+## Query Script
+#### Queries RESTful APIs to uncover species with red hair. 
+#### Vivek M. - 12/03/2024
+### Description
 A single Python script named queryScript.py that queries the  MyGene API and Ensembl API to retrieve data on the MC1R gene.
 
 Output:
